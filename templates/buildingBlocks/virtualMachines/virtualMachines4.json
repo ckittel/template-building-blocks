@@ -4,7 +4,7 @@
   "parameters": {
     "blll": {
       "type": "string",
-      "defaultValue": "uri(deployment().properties.templateLink.uri, 'virtualMachine.json')"
+      "defaultValue": "[deployment().properties.templateLink.uri]"
     }
   },
   "variables": {
