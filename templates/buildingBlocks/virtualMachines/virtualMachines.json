@@ -13,7 +13,7 @@
     },
     "blll": {
       "type": "string",
-      "defaultValue": "uri(deployment().properties.templateLink.uri, 'virtualMachine.json'"
+      "defaultValue": "sdfasdfsdf"
     }
   },
   "variables": {
