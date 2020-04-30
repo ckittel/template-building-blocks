@@ -2,13 +2,9 @@
   "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "blll": {
-      "type": "string",
-      "defaultValue": "[deployment().properties.templateLink.uri]"
-    }
   },
   "variables": {
-    "virtualMachineTemplate": "[parameters('blll')]"
+    "virtualMachineTemplate": "deployment().properties.templateLink.uri"
     //"[concat(uri(deployment().properties.templateLink.uri, 'virtualMachine.json'), parameters('deploymentContext').sasToken)]",
     //"templateUniqueString": "[uniqueString(concat(string(parameters('deploymentContext')), string(parameters('virtualMachines')), string(parameters('secrets'))))]"
   },
